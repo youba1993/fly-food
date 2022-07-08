@@ -24,8 +24,9 @@ function App() {
         // i limited the number of meals to one each 
         const exist = allDataCart.find((x=> x.meal === dataCart.meal)); 
         if(!exist) setAllDataCart([...allDataCart, dataCart]);
+        
       }
-    },[dataCart])
+    },[dataCart, allDataCart])
 
   function toggleLogIn() {
     setLogInOn(!logInOn)
