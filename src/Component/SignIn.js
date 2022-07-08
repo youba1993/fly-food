@@ -18,7 +18,7 @@ function SignIn() {
 
     
      useEffect(()=>{
-        fetch("http://localhost:4000/users")
+        fetch("https://fly-food-1.herokuapp.com/users")
            .then((resp)=>resp.json())
            .then((user)=> setUsers(user))
     },[]);

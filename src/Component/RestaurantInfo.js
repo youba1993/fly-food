@@ -11,24 +11,24 @@ import {
 } from 'mdb-react-ui-kit';
 
 function RestaurantInfo({ basicModal, handletoggle, menu, name, setDataCart }) {
-                             
+
     const toggleShow = () => handletoggle(basicModal);                     // handle the modal 
 
     const cartElement = { meal: "", price: 0 }                             // a cart element 
 
     function handleAddButon(index) {                                       // handle the add button thats fill the cart 
-        cartElement.meal = menu[index].meal;                                
+        cartElement.meal = menu[index].meal;
         cartElement.price = menu[index].price;
         setDataCart(cartElement);                                          //add element to the cart
-                     
-    }
-    
 
-    
+    }
+
+
+
     return (
         <>
 
-            <MDBModal show={basicModal} setShow={()=>basicModal} tabIndex='-1'>
+            <MDBModal show={basicModal} setShow={() => basicModal} tabIndex='-1'>
                 <MDBModalDialog>
                     <MDBModalContent>
                         <MDBModalHeader>

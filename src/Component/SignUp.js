@@ -20,7 +20,7 @@ function SignUp() {
 
     function handleSubmit(event){
             event.preventDefault();
-            fetch("http://localhost:4000/users",{
+            fetch("https://fly-food-1.herokuapp.com/users",{
                 method: "POST",
                 headers:{
                     "Content-Type": "application/json",

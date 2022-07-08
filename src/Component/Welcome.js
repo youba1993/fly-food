@@ -6,7 +6,7 @@ function Welcome({setDataCart}) {
 
     const [restaurants, setRestaurants] = useState([])   // Load db.json in the state
     useEffect(()=>{
-        fetch('http://localhost:4000/restaurants')
+        fetch("https://fly-food-1.herokuapp.com/restaurants")
             .then((resp)=> resp.json())
             .then ((data)=> (setRestaurants(data)))
     },[])
