@@ -1,3 +1,9 @@
+# Links 
+Link to the deployed website in netlify : https://neon-marzipan-1407b2.netlify.app/ 
+nb /: refresh the page to see the complete website after dataBase loaded,
+Link to the Json server in Github: https://github.com/youba1993/fly-food-1/blob/master/db.json
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
